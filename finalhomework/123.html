@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html style="overflow-x: hidden;">
+<head>
+    <title></title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;
+     } 
+a{
+  text-decoration: none;
+  } 
+ul{list-style-type: none;}
+  .clear:after{
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  }
+.whole{
+  width: 1363px;
+  height: 1370px;
+  background-color: #E0E0E0;
+  position: relative;
+}
+.cols{
+  width:75px;
+  height: 1370px;
+  background-color: rgb(52,73,94);
+}
+.row{
+  position:absolute;
+  top: 1px;
+  left: 76px;
+  width:1203px;
+  height: 80px;
+  background-color: white; 
+}
+.row img{
+  width: 180px;
+  height: 80px;
+}
+.row ul{display: inline-block;}
+.row li{float: left;}
+.row a{color: black;}
+.row a:hover{color: blue;}
+.row input{position: absolute;
+          right: 260px;
+          top: 26px;
+          border-radius: 3px;
+          height: 25px;
+          border-color:#D8D8D8;}
+.row input:hover{border-color: red;}          
+input::-webkit-input-placeholder{
+  color:#aab2ad;
+}
+.mid{
+   position: absolute;
+   top: 100px;
+   left: 130px;
+   width: 1073px;
+   height: 378px;
+   background-color: white;
+}
+.mid>img{margin-left: 30px;
+        margin-top: 30px;}
+.month{position: absolute;
+      right: 250px;
+      top:90px;
+      }
+.month p{
+      font-size: 15px;
+      font-weight: bold;
+      color: rgb(56,106,66);
+}
+.num {position: absolute;
+      right: 130px;
+      top:68px;}
+.num p{
+      font-size: 80px;
+      font-weight: bold;
+      color: rgb(56,106,66);
+}
+.week{position: absolute;
+      right: 90px;
+      top:90px;
+      }
+.week p{
+      font-size: 15px;
+      font-weight: bold;
+      color: rgb(56,106,66);
+}
+.rev{
+    position: absolute;
+    right: 110px;
+    bottom: 170px;
+}
+.rev p{
+    font-size: 10px;
+}
+.question{
+   width: 250px;
+   height: 200px;
+   background-color: white;
+   position: absolute;
+   top: 500px;
+   left: 130px;
+}
+.question p{
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(63,63,63);
+    position: absolute;
+    left: 15px;
+    top:15px;
+}
+.question input{
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    height: 30px;
+    border-color:#66CCFF;
+}
+.switch{width: 65px;
+        height: 35px;
+        position: absolute;
+        top:120px;
+        left: 15px;
+        background-color: rgb(221,81,76);
+        border-radius:3px;
+        color: white;
+        border-color: white;}
+.suiji{ width: 95px;
+        height: 35px;
+        position: absolute;
+        top:120px;
+        left: 85px;
+        background-color: rgb(14,144,210);
+        border-radius:3px;
+        color: white;
+        border-color: white;
+
+}
+.step{
+   width: 800px;
+   height: 200px;
+   background-color: white;
+   position: absolute;
+   top: 500px;
+   left: 400px;
+}
+.step img{margin-left: 10px;
+          margin-top: 20px;}
+.notice{
+    width: 800px;
+   height: 400px;
+   background-color: white;
+   position: absolute;
+   top: 730px;
+   left: 130px;
+}
+.notice >p{
+   font-size: 23px;
+    font-weight: bold;
+    color: rgb(63,63,63);
+    position: absolute;
+    left: 15px;
+    top:15px;
+}
+.green{width: 350px;
+      height: 100px;
+      border: 1px rgb(201,231,201) solid;
+      position: absolute;
+      top: 60px;
+      left: 20px;
+      border-radius: 7px;
+      }
+.shadow{
+      width: 350px;
+      height: 30px;
+      background-color:rgb(235,241,235);
+      border-radius: 3px;
+}
+.shadow a{color: rgb(94,185,94);
+      font-weight: bolder;
+      font-size: 13px;
+      position: absolute;
+      left: 15px;
+      top:5px;
+    }
+.green1{
+      background-color:rgb(58,107,67); 
+      width: 80px;
+      height: 23px;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      position: absolute;
+      left: 10px;
+      top: 40px;
+      padding-top: 2px;
+      border-radius: 3px;
+}
+.yellow1{
+      background-color:rgb(249,196,15); 
+      width: 35px;
+      height: 20px;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      position: absolute;
+      left: 10px;
+      top: 65px;
+      padding-left:10px;
+      padding-top: 2px;
+      border-radius: 3px;
+    }
+.time1 p{
+      font-size: 10px;
+      position: absolute;
+      left: 110px;
+      top: 45px;
+      }
+.time1 a{font-size: 10px;
+      position: absolute;
+      left: 110px;
+      top: 55px;
+      color:#3366ff;
+    }
+.notice1{
+      width: 260px;
+      height: 430px;
+      background-color: white;
+      position: absolute;
+      left: 820px;
+}
+
+.notice1>p{
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(63,63,63);
+    position: absolute;
+    left: 15px;
+    top:15px;
+}
+.list a{
+  color: #0099FF;
+}
+.bottom{background-color: rgb(51,51,51);
+        width: 1233px;
+        height: 170px;
+        display: inline-block;
+        position: absolute;
+        top: 1200px;
+        left: 75px;}
+.bottom ul{
+       
+        position: absolute;
+        right: 50px;
+        bottom: 120px;
+}
+.bottom li{
+        float: left;
+        padding-left: 7px;
+        padding-right: 7px;
+        border-left:1px solid rgb(235,235,223)
+}
+.bottom a{
+        color:rgb(235,235,223);
+        font-size: 13px;
+}
+.bottom a:hover{
+  color: white;
+}
+.bottom p{position: absolute;
+          color:rgb(235,235,223);
+          left: 830px;
+          top: 100px;
+          font-size: 13px;}
+    </style>
+</head>
+<body>
+    <div class="whole" >
+        <div class="bottom" 
+       ">
+            <img style="width: 250px;height: 90px;padding-top: 33px;padding-left: 30px;" src="images/loooogo.png">
+            <img style="width: 80px;height: 80px;padding-left: 60px;padding-bottom: 15px;" src="images/code.png">
+            <ul>
+                <li class="first" style="border-left: rgb(51,51,51);"><a href="">关于洛谷</a></li>
+                <li><a href="">帮助中心</a></li>
+                <li><a href="">用户协议</a></li>
+                <li class="last"><a href="">联系我们</a></li>
+            </ul>
+            <ul style="position: absolute;top: 65px;left:925px;">
+                <li class="first" style="border-left: rgb(51,51,51);"><a href="">小黑屋</a></li>
+                <li><a href="">陶片放逐</a></li>
+                <li><a href="">社区规则</a></li>
+                <li class="last"><a href="">招贤纳才</a></li>
+            </ul>
+            <p>2013-2020 , © 洛谷 Developed by the Luogu Dev Team</p></b>
+            <p style="position: absolute;left: 935px;
+          top: 130px;">沪ICP备18008322号 All rights reserved.</p>
+            
+        </div>
+        <div class="cols">
+           <div>
+            <a href="">
+                <img style="width: 75px;height: 80px;" src="images/123.png">
+                <p style="color: white;position:absolute;left: 8px;top: 94px; ">应用>></p>
+            </a>
+           </div>
+           <div style="position: absolute;top: 130px;">
+            <a href=""><img style="width: 75px;height: 80px;" src="images/2.png" src=""></a>
+            </div>
+        </div>  
+        <div style="position: absolute;top: 210px;">
+            <a href=""><img style="width: 75px;height: 80px;" src="images/3.png" src=""></a>
+            </div>
+        <div style="position: absolute;top: 290px;">
+            <a href=""><img style="width: 75px;height: 80px;" src="images/4.png" src=""></a>
+            </div>
+
+        <div class="row">
+            <img src="images/luogu.png">
+            <ul>
+                <li style="position: absolute;bottom: 33px;left: 200px;"><a href="">洛谷网校</a></li>
+                <li style="position: absolute;bottom: 33px;left: 330px;"><a href="">洛谷有题</a></li>
+            </ul>
+            <input type="search" name="" placeholder="请输入您要搜索的内容">
+           <a href=""><img style="position:absolute;right: 230px;top:26px;width: 30px;height: 25px;" src="images/search.png"></a>
+           <ul>
+                <li style="position: absolute;bottom: 33px;right: 100px;"><a href="">登录</a></li>
+                <li style="position: absolute;bottom: 33px;right: 150px;"><a href="">注册</a></li>
+            </ul>
+            <img style="position: absolute;
+              bottom: 27px;
+              right: 30px;
+              width: 30px;
+              height: 30px;" src="images/littlepicture.png">
+        </div>
+        <div class="mid">
+            <img src="images/mid.png">
+            <div class="month">
+                <p>六</p></b>
+                <p>月</p></b>
+                <p>小</p>
+            </div>
+            <div class="num">
+                <p>05</p>
+            </div>
+            <div class="week">
+                <p>星</p></b>
+                <p>期</p></b>
+                <p>五</p>
+            </div>
+            <div class="rev">
+                <p>距 CSP<strong>2020 第一轮</strong> 还剩<strong> 133 天</strong> </p>
+                </b>
+                <P>距 CSP<strong> 2020 第二轮</strong> 还剩<strong> 161 天</strong></P>    
+            </div>
+            <div>
+                <img style="position: absolute;left: 300px;top: 310px;" src="images/spots.png">
+            </div>
+        </div>          
+        <div class="question">
+            <p>问题跳转</p>
+            <input type="" name="" placeholder="例：P1001，可跳至A+B">
+            <button class="switch">跳转</button>
+            <button class="suiji">随机跳题</button>
+        </div>
+        <div class="step">
+            <img src="images/step1.png">
+            <img src="images/step2.png">
+            <img src="images/step3.png">
+        </div>
+        <div class="notice">
+            <p>近期比赛</p>
+            <div class="green">
+                <div style="width: 350px;height: 30px;background-color:rgb(235,241,235); " class="shadow">
+                    <a href="">
+                        [EZEC] Round2 欢乐公开赛
+                    </a> 
+                </div>
+                <div style="padding-left: 10px;" class="green1">团队公开赛
+                </div>
+                <div class="yellow1">lOl
+                </div>
+                <div class="time1">
+                    <p style="color:rgb(94,185,94);font-weight: bold; ">未开始 
+                    </p>
+                    <p style="padding-left: 40px;">5时46分后
+                    </p>
+                    <p style="padding-left: 170px;color:rgb(148,127,127);">06-06 14:00
+                    </p>
+                    </b>
+                    <a style="position: absolute;top:62px;" href="">EZEC出题组-公开赛</a>
+                    </p>
+                    <p style="position: absolute;left: 280px;top: 60px; color: rgb(148,127,127);">06-06 18:00
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="green" style="position: absolute;left: 390px;border-color: rgb(245,206,205);">
+                <div style="width: 350px;height: 30px;background-color:rgb(250,229,228); " class="shadow">
+                    <a style="color: rgb(221,81,76);" href="">
+                       [YsOI2020]六一欢乐赛  
+                    </a> 
+                </div>
+                <div style="padding-left: 10px;" class="green1">团队公开赛
+                </div>
+                <div class="yellow1">lOl
+                </div>
+                <div class="time1">
+                    <p style="color:rgb(221,81,76);font-weight: bold; ">已结束 
+                    </p>
+                    <p style="padding-left: 40px;">比赛已结束
+                    </p>
+                    <p style="padding-left: 170px;color:rgb(148,127,127);">05-31 14:10
+                    </p>
+                    </b>
+                    <a style="position: absolute;top:62px;" href="">YsOI出题组</a>
+                    </p>
+                    <p style="position: absolute;left: 280px;top: 60px; color: rgb(148,127,127);">05-31 17:40
+                    </p>
+                </div>
+            </div>
+             <div>
+                <div class="green" style="position: absolute;left: 20px;top: 170px; border-color: rgb(245,206,205);">
+                <div style="width: 350px;height: 30px;background-color:rgb(250,229,228); " class="shadow">
+                    <a style="color: rgb(221,81,76);" href="">
+                       【LGR-072】洛谷 5 月月赛 Div.2  
+                    </a> 
+                </div>
+                <div style="padding-left: 10px;width: 60px;background-color:rgb(231,76,60); " class="green1">官方比赛
+                </div>
+                <div class="yellow1">lOl
+                </div>
+                <div class="time1">
+                    <p style="color:rgb(221,81,76);font-weight: bold; ">已结束 
+                    </p>
+                    <p style="padding-left: 40px;">比赛已结束
+                    </p>
+                    <p style="padding-left: 170px;color:rgb(148,127,127);">05-31 14:10
+                    </p>
+                    </b>
+                    
+                    <p style="position: absolute;left: 280px;top: 60px; color: rgb(148,127,127);">05-31 17:40
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                <div class="green" style="position: absolute;left: 390px;top: 170px; border-color: rgb(245,206,205);">
+                <div style="width: 350px;height: 30px;background-color:rgb(250,229,228); " class="shadow">
+                    <a style="color: rgb(221,81,76);" href="">
+                       【LGR-072】洛谷 5 月月赛 Div.1 
+                    </a> 
+                </div>
+                <div style="padding-left: 10px;width: 60px;background-color:rgb(231,76,60); " class="green1">官方比赛
+                </div>
+                <div class="yellow1">lOl
+                </div>
+                <div class="time1">
+                    <p style="color:rgb(221,81,76);font-weight: bold; ">已结束 
+                    </p>
+                    <p style="padding-left: 40px;">比赛已结束
+                    </p>
+                    <p style="padding-left: 170px;color:rgb(148,127,127);">05-31 14:10
+                    </p>
+                    </b>
+                    
+                    <p style="position: absolute;left: 280px;top: 60px; color: rgb(148,127,127);">05-31 17:40
+                    </p>
+                </div>
+            </div>
+            </div>
+            <div>
+            
+                <div class="green" style="position: absolute;left: 20px;top: 280px; border-color: rgb(245,206,205);">
+                <div style="width: 350px;height: 30px;background-color:rgb(250,229,228); " class="shadow">
+                    <a style="color: rgb(221,81,76);" href="">
+                       【LGR-072】洛谷 5 月月赛 Div.1 
+                    </a> 
+                </div>
+                <div style="padding-left: 10px;width: 60px; " class="green1">团队公开赛
+                </div>
+                <div class="yellow1">lOl
+                </div>
+                <div class="time1">
+                    <p style="color:rgb(221,81,76);font-weight: bold; ">已结束 
+                    </p>
+                    <p style="padding-left: 40px;">比赛已结束
+                    </p>
+                    <p style="padding-left: 170px;color:rgb(148,127,127);">05-31 14:10
+                    </p>
+                    </b>
+                    <a style="position: absolute;top:62px;" href="">蒟蒻炖蒟蒻副团</a>
+                    <p style="position: absolute;left: 280px;top: 60px; color: rgb(148,127,127);">05-31 17:40
+                    </p>
+                </div>
+            </div>
+            
+            <div>
+               <div class="green" style="position: absolute;left: 390px;top: 280px; border-color: rgb(245,206,205);">
+                <div style="width: 350px;height: 30px;background-color:rgb(250,229,228); " class="shadow">
+                    <a style="color: rgb(221,81,76);" href="">
+                       【LGR-072】洛谷 5 月月赛 Div.1 
+                    </a> 
+                </div>
+                <div style="padding-left: 10px;width: 60px; " class="green1">团队公开赛
+                </div>
+                <div class="yellow1">lOl
+                </div>
+                <div class="time1">
+                    <p style="color:rgb(221,81,76);font-weight: bold; ">已结束 
+                    </p>
+                    <p style="padding-left: 40px;">比赛已结束
+                    </p>
+                    <p style="padding-left: 170px;color:rgb(148,127,127);">05-31 14:10
+                    </p>
+                    </b>
+                    <a style="position: absolute;top:62px;" href="">SBC的水题团队</a>
+                    <p style="position: absolute;left: 280px;top: 60px; color: rgb(148,127,127);">05-31 17:40
+                    </p>
+                </div>
+            </div>
+            <div class="notice1">
+                <p>本站公告</p>
+                <div class="list" style="position: absolute;top: 60px;left: 20px;line-height: 45px;color: blue;">
+                <ul>
+                    <li><a href="">洛谷主题库题目规范</a></li>
+                    <li><a href="">题解审核要求及反馈要求</a></li>
+                    <li><a href="">新版公开比赛要求</a></li>
+                    <li><a href="">洛谷咕值系统介绍</a></li>
+                    <li><a href="">洛谷更新日志</a></li>
+                    <li><a href="">【题单征集】精选题单征集贴</a></li>
+                    <li><a href="">评测机语言环境信息</a></li>
+                </ul>
+                </div>
+            </div> 
+        </div>
+
+        
+    </div>
+
+</body>
+</html>
