@@ -560,6 +560,12 @@
 </div>
 <button id="test" style="width:70px;height:30px;position:fixed;right:0;bottom:0">回到顶部</button>
 <script type="text/javascript">
+   window.οnlοad=function(){
+  if (location.href.indexOf("?xyz=")<0)
+ {
+ location.href=location.href+"?xyz="+Math.random();
+ }
+}
     var a=document.getElementsByClassName("a1");
     var box=document.getElementById("box");
     var left=document.getElementById("left");
