@@ -286,7 +286,7 @@
       font-size: 13px;}
   </style>
 </head>
-<body>
+<body id="bod">
     <div class="whole" >
         <div class="bottom" 
         ">
@@ -560,12 +560,14 @@
 </div>
 <button id="test" style="width:70px;height:30px;position:fixed;right:0;bottom:0">回到顶部</button>
 <script type="text/javascript">
-   window.οnlοad=function(){
-  if (location.href.indexOf("?xyz=")<0)
- {
- location.href=location.href+"?xyz="+Math.random();
- }
-}
+    var bod=document.getElementById("bod");
+    var i=0;
+    bod.onload=function(){
+        i++;
+    if(i==1){
+       window.parent.location.reload();
+    }
+    }
     var a=document.getElementsByClassName("a1");
     var box=document.getElementById("box");
     var left=document.getElementById("left");
@@ -581,7 +583,7 @@
             i=-692;
         }
         slider.style.left=i+"px";
-    },1000)
+    },2000)
 
     box.onmouseover=function(){
         clearInterval(change);
@@ -594,13 +596,13 @@
             i=-692;
         }
         slider.style.left=i+"px";
-    },1000)
+    },2000)
    }
    test.onclick = function(){
     document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
 slider.onclick=function(){
-    alert("此图片可以实现自由轮播");
+    alert("此图片可以自由轮播");
 }
 </script>
 
